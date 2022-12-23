@@ -1,0 +1,205 @@
+<p>&nbsp;</p>
+<meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+{
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;   /* not beyound 1.5,never-0.1 */
+}
+
+.active,
+.demo:hover {
+  opacity: 1;   /* not beyound 2 ,never-0.5 */
+}
+</style>
+
+
+<h2 style="text-align: center;">Slideshow Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 7</div>
+    <img src="https://static.startuptalky.com/2021/12/Peeyush-Bansal-Shark-Tank-India-StartupTalky--1-.jpg" style="width: 100%;" />
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 7</div>
+    <img src="https://static.startuptalky.com/2021/12/Namita-Thapar-Shark-Tank-India-StartupTalky.jpg" style="width: 100%;" />
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 7</div>
+    <img src="https://static.startuptalky.com/2021/12/Aman-Gupta-Shark-Tank-India-StartupTalky--2-.jpg" style="width: 100%;" />
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 7</div>
+    <img src="https://static.startuptalky.com/2021/12/Ghazal-Alagh-Shark-Tank-India-StartupTalky.jpg" style="width: 100%;" />
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 7</div>
+    <img src="https://static.startuptalky.com/2021/12/Anupam-Mittal-Shark-Tank-India-StartupTalky-1.jpg" style="width: 100%;" />
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 7</div>
+    <img src="https://static.startuptalky.com/2021/12/Vineeta-Singh-Shark-Tank-India-StartupTalky--1-.jpg" style="width: 100%;" />
+  </div>
+  
+   <div class="mySlides">
+    <div class="numbertext">7 / 7</div>
+    <img src="https://static.startuptalky.com/2021/12/Ashneer-Grover-Shark-Tank-India-StartupTalky--1-.jpg" style="width: 100%;" />
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img alt="&lt;b&gt;Peeyush Bansal,founder as well as CEO of Lenskart.com
+&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;Peyush Bansal is the CEO and Founder of Lenskart. He did his undergraduate from  McGill University and post-graduation from the Indian  IIM Bangalore. He founded Lenskart in 2010 with the help of Amit Chaudhary and Sumeet Kapahi." class="demo cursor" onclick="currentSlide(1)" src="https://static.startuptalky.com/2021/12/Peeyush-Bansal-Shark-Tank-India-StartupTalky--1-.jpg" style="width: 100%;" />
+    </div>
+    <div class="column">
+      <img alt="Namita Thapar - Executive Director of Emcure Pharmaceuticals
+Namita Thapar is the executive director of Emcure Pharmaceuticals. She is a chartered accountant from ICAI and earned an MBA from the Fuqua School of Business at Duke University." class="demo cursor" onclick="currentSlide(2)" src="https://static.startuptalky.com/2021/12/Namita-Thapar-Shark-Tank-India-StartupTalky.jpg" style="width: 100%;" />
+    </div>
+    <div class="column">
+      <img alt="Aman Gupta - Co-Founder and Chief Marketing Officer at boAt
+Aman Gupta is the Co-founder of boAt Lifestyle. He did his MBA from Kellogg School of Management. Aman Gupta founded BoAt in 2011 with Sameer Mehta. Before co-founding Boat, he was the director of sales at Harman International." class="demo cursor" onclick="currentSlide(3)" src="https://static.startuptalky.com/2021/12/Aman-Gupta-Shark-Tank-India-StartupTalky--2-.jpg" style="width: 100%;" />
+    </div>
+    <div class="column">
+      <img alt="Anupam Mittal
+Ghazal Alagh - Co-founder and Chief Mama of Mamaearth
+Ghazal Alagh is the Co-Founder and Chief Mama at Mamaearth. She has done Bachelors in Information Technology and Intensive Courses in Modern Art, Design and Applied Arts from the New York Academy of Arts. Before founding Mamaearth Ghazal was a Corporate Trainer. She co-founded Mamaearth in 2016 with Varun Alagh." class="demo cursor" onclick="currentSlide(4)" src="https://static.startuptalky.com/2021/12/Ghazal-Alagh-Shark-Tank-India-StartupTalky.jpg" style="width: 100%;" />
+    </div>
+    <div class="column">
+      <img alt="Anupam Mittal - Founder and CEO of Shaadi.com - People Group
+Anupam Mittal is a Co-Founder and CEO of Shaadi.com - People Group. He has done his MBA in Operations and Strategic Management from the Boston College in the USA. He founded Shaadi.com in 1997." class="demo cursor" onclick="currentSlide(5)" src="https://static.startuptalky.com/2021/12/Anupam-Mittal-Shark-Tank-India-StartupTalky-1.jpg" style="width: 100%;" />
+    </div>    
+    <div class="column">
+      <img alt="Vineeta Singh, CEO and Co-founder of SUGAR Cosmetics
+Vineeta Singh is the Co-Founder and CEO of SUGAR Cosmetics. Vineeta Singh completed her electrical engineering from IIT Madras and later on went to pursue her Business Studies at IIM Ahemdabad. She co-founded Sugar Cosmetics in 2015 with Kaushik Mukharjee." class="demo cursor" onclick="currentSlide(6)" src="https://static.startuptalky.com/2021/12/Vineeta-Singh-Shark-Tank-India-StartupTalky--1-.jpg" style="width: 100%;" />
+    </div>
+    
+    
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
